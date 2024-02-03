@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementation of neural network</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Classification Problem:</h1>
+             <h2>The person earn Income>50 ?</h2> 
+        <h3>Enter The Details</h3>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+        </div>
+        <div>
+            <label for="educational-num">Educational Number:</label>
+            <input type="number" id="educational-num" required>
+        </div>
+        <div>
+            <label for="capital-gain">Capital Gain:</label>
+            <input type="number" id="capital-gain" required>
+        </div>
+        <div>
+            <label for="capital-loss">Capital Loss:</label>
+            <input type="number" id="capital-loss" required>
+        </div>
+        <div>
+            <label for="hours-per-week">Hours per Week:</label>
+            <input type="number" id="hours-per-week" required>
+        </div>
+        <button onclick="classify()">Classify</button>
+        <div id="result"></div>
+
+        <h1>Model Structure:</h1>
+        <div class="model-structure">
+            <img src="results/Model Structure.png" alt="Model Structure">
+        </div>
+        <h1>Training Loss:</h1>
+        <div class="model-structure">
+            <img src="results/Loss_graph.png" alt="Model Structure">
+        </div>
+        <h1>Metrics:</h1>
+        <table>
+            <tr>
+                <th>Metric</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Accuracy</td>
+                <td>83%</td>
+            </tr>
+            <tr>
+                <td>F1 Score</td>
+                <td>0.51</td>
+            </tr>
+            <tr>
+                <td>Precision</td>
+                <td>0.44</td>
+            </tr>
+            <tr>
+                <td>Recall</td>
+                <td>0.64</td>
+            </tr>
+        </table>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
